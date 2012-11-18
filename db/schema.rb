@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121118131700) do
+ActiveRecord::Schema.define(:version => 20121118135000) do
 
   create_table "dokuments", :force => true do |t|
     t.string   "titel"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20121118131700) do
   create_table "gremia", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "title"
+    t.string   "name"
   end
 
   create_table "gremia_mitglieds", :id => false, :force => true do |t|

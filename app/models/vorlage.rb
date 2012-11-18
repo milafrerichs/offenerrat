@@ -1,7 +1,7 @@
 class Vorlage < ActiveRecord::Base
-	has_many :tagesordnung
-	has_many :dokument
-	has_many :gremium, :through =>:tagesordnung
+	has_many :tagesordnungs
+	has_many :dokuments
+	has_many :gremia, :through =>:tagesordnungs
 	attr_accessible :titel
 	
 end

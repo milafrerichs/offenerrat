@@ -1,9 +1,18 @@
 <h1>Gremien</h1>
 
-<%= link_to_function "test js", '$(this).html("js works")' %>
-<%= render 'form' %>
-<ul>
+<table>
+	<thead>
+		<tr>
+			<th>Gremium</th>
+			<th>Nächste Sitzung</th>
+			<th>Letzte Sitzung</th>
+		</tr>
+	</thead>
 	<% @gremia.each do |gremium| %>
-<li><%= gremium.title %></li>
+	<tr>
+		<td><%= gremium.name %> </td>
+		<td><%= render_next_sitzung(gremium) %></td>
+		<td><%= render_last_sitzung(gremium) %></td>
+	</tr>
 <% end %>
-</ul>
+</table>

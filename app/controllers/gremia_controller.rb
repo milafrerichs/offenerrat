@@ -3,6 +3,7 @@ class GremiaController < ApplicationController
 	def index
 		@gremium = Gremium.new
 		@gremia = Gremium.all
+		
 	end
 	
 	def create
