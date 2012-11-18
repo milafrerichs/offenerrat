@@ -1,0 +1,2 @@
+module SitzungsHelper
+end

@@ -1,0 +1,2 @@
+module MitgliedsHelper
+end

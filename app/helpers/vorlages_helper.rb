@@ -1,0 +1,2 @@
+module VorlagesHelper
+end

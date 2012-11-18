@@ -1,0 +1,9 @@
+<h1>Gremien</h1>
+
+<%= link_to_function "test js", '$(this).html("js works")' %>
+<%= render 'form' %>
+<ul>
+	<% @gremia.each do |gremium| %>
+<li><%= gremium.title %></li>
+<% end %>
+</ul>
